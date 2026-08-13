@@ -18,6 +18,21 @@ An asynchronous Retrieval-Augmented Generation (GraphRAG) system built with **Py
 * **Vector Search:** scikit-learn (TF-IDF Cosine Similarity for hybrid fallback)
 * **Async Concurrency:** Python `asyncio`
 
+graphrag-item-extractor/
+├── src/
+│   ├── __init__.py
+│   ├── models.py
+│   ├── ingestion.py
+│   ├── graph_rag.py
+│   └── visualize.py
+├── data/
+│   └── sample_transcripts.json
+├── .env.example
+├── .gitignore
+├── requirements.txt
+├── main.py
+└── README.md
+
 ---
 
 ## 📦 Installation & Setup
