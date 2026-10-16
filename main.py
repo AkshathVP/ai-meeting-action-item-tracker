@@ -79,7 +79,7 @@ async def main():
     for q in queries:
         print(f"\nQuery: '{q}'")
         result = engine.hybrid_query(q, top_k=2, depth=1)
-        print(f" -> Retrieval Latency: {result['retrieval_latency_ms']} ms (Target: <800ms)")
+        print(f" -> Retrieval Latency: {result['retrieval_latency_ms']} ms ")
         print(f" -> Action Items Found: {[item['task_id'] + ': ' + item['description'] for item in result['retrieved_action_items']]}")
         print(f" -> Graph Context Enriched: {result['enriched_graph_context'][:3]}")
 
