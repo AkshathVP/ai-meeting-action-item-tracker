@@ -6,7 +6,7 @@ An asynchronous Retrieval-Augmented Generation (GraphRAG) system built with **Py
 - Built an asynchronous Python pipeline that ingests batches of raw meeting transcripts and transforms unstructured meeting text into structured, consistently formatted records for further processing.
 **High-Speed Async Ingestion:** Built using `asyncio` and Groq's high-speed inference API (`Llama-3.3-70b-versatile`),
 - Applied Pydantic schema validation to enforce data integrity and data quality before graph construction, and modeled relationships between entities to track ownership and dependencies across meeting action items.
-* Replaces standard flat vector search with a hybrid **NetworkX** knowledge graph.
+* * Combines TF-IDF similarity retrieval with **NetworkX** graph context for hybrid retrieval.
 - Produced interactive visualizations with PyVis to represent the constructed relationships, enabling reporting on blockers and task status while supporting data-driven decision-making.
 ---
 
