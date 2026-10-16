@@ -70,8 +70,25 @@ class GraphRAGEngine:
                 retrieved_items.append(meta)
                 subgraph_nodes.add(task_id)
                 
-                if task_id in self.graph:
-    current_nodes = {task_id}
+                                if task_id in self.graph:
+                    current_nodes = {task_id}
+
+                    for _ in range(depth):
+                        next_nodes = set()
+
+                        for node in current_nodes:
+                            neighbors = (
+                                list(self.graph.predecessors(node))
+                                + list(self.graph.successors(node))
+                            )
+                            next_nodes.update(neighbors)
+
+                        next_nodes -= subgraph_nodes
+                        subgraph_nodes.update(next_nodes)
+                        current_nodes = next_nodes
+
+                        if not current_nodes:
+                            break
 
     for _ in range(depth):
         next_nodes = set()
