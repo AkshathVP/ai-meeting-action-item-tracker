@@ -15,7 +15,7 @@ class GraphRAGEngine:
         self.tfidf_matrix = None
 
     def build_index(self, extractions: List[MeetingExtraction]):
-        print("\nConstructing Knowledge Graph and Vector Embeddings...")
+        print("\nConstructing Knowledge Graph and TF-IDF Retrieval Index...")
         for ext in extractions:
             for entity in ext.entities:
                 self.graph.add_node(entity.name, label=entity.label, type="entity")
