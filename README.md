@@ -112,7 +112,7 @@ python main.py
 
 The script processes the sample transcripts when a Groq API key and non-empty input are available. Otherwise, it uses built-in fallback data to demonstrate graph construction and querying. It runs example hybrid queries in the terminal and writes `interactive_knowledge_graph.html` to the project root. Open that HTML file in a browser to explore the graph.
 
-## Notes & Limitations
+## Notes 
 
 - This is a prototype pipeline, not a hosted web application; interaction is through the command line and exported HTML graph.
 - Retrieval uses TF-IDF cosine similarity rather than embedding-based semantic search. Graph traversal adds connected context to retrieved tasks.
