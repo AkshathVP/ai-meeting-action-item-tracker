@@ -25,5 +25,5 @@ An asynchronous Retrieval-Augmented Generation (GraphRAG) system built with **Py
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/AkshathVP/graphrag-item-extractor.git
-   cd graphrag-item-extractor
+   git clone https://github.com/AkshathVP/ai-meeting-action-item-tracker.git
+cd ai-meeting-action-item-tracker
