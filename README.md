@@ -14,7 +14,7 @@ An asynchronous Retrieval-Augmented Generation (GraphRAG) system built with **Py
 * **LLM & Inference:** Groq API (`llama-3.3-70b-versatile`), AsyncGroq
 * **Graph Architecture:** NetworkX, PyVis (HTML interactive graphs)
 * **Data Validation:** Pydantic (Structured JSON parsing)
-* **Vector Search:** scikit-learn (TF-IDF Cosine Similarity for hybrid fallback)
+* **Retrieval:** scikit-learn (TF-IDF Vectorization and Cosine Similarity)
 * **Async Concurrency:** Python `asyncio`
 
 
