@@ -49,9 +49,9 @@ class AsyncTranscriptIngestor:
             content = response.choices[0].message.content
             data = json.loads(content)
             return MeetingExtraction(**data)
-        except Exception as e:
-            print(f"[Error] Failed to extract from {meeting_id}: {e}")
-            return MeetingExtraction(meeting_id=meeting_id, action_items=[], entities=[], relationships=[])
+      except Exception as e:
+    print(f"[Error] Failed to extract from {meeting_id}: {e}")
+    raise
 
     async def process_batch(self, transcripts: List[dict], batch_size: int = 10) -> List[MeetingExtraction]:
         results = []
