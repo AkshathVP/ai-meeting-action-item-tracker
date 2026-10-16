@@ -1,6 +1,6 @@
-# GraphRAG Item Extractor & Action Delegation Engine
+# GraphRAG Item Extractor
 
-An asynchronous Retrieval-Augmented Generation (GraphRAG) system built with **Python**, **Llama 3.3**, and **NetworkX**. Designed to automate cross-functional task delegation from raw meeting audio/transcripts and radically eliminate manual meeting follow-up overhead.
+An asynchronous Retrieval-Augmented Generation (GraphRAG) system built with **Python**, **Llama 3.3**, and **NetworkX**. Designed to extract structured action items, assignees, dependencies, and relationships from raw meeting transcripts to support meeting follow-up and reporting.
 
 ##  Key Architectural Achievements & Metrics
 - Built an asynchronous Python pipeline that ingests batches of raw meeting transcripts and transforms unstructured meeting text into structured, consistently formatted records for further processing.
