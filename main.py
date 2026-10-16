@@ -61,7 +61,7 @@ async def main():
         ingestor = AsyncTranscriptIngestor(api_key=api_key)
         extractions = await ingestor.process_batch(transcripts)
     else:
-        print("[Notice] No GROQ_API_KEY found or empty data. Running with high-accuracy fallback dataset to demonstrate graph architecture...")
+        print("[Notice] No GROQ_API_KEY found or empty data. Running with fallback dataset to demonstrate graph architecture...")
         extractions = get_fallback_data()
 
     engine = GraphRAGEngine()
