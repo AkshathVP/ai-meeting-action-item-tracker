@@ -1,4 +1,4 @@
-# GraphRAG Item Extractor
+# AI Meeting Action Item Tracker
 
 An asynchronous Retrieval-Augmented Generation (GraphRAG) system built with **Python**, **Llama 3.3**, and **NetworkX**. Designed to extract structured action items, assignees, dependencies, and relationships from raw meeting transcripts to support meeting follow-up and reporting.
 
