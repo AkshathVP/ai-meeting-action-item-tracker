@@ -25,5 +25,5 @@ An asynchronous Retrieval-Augmented Generation (GraphRAG) system built with **Py
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/yourusername/graphrag-item-extractor.git](https://github.com/yourusername/graphrag-item-extractor.git)
+   git clone https://github.com/AkshathVP/graphrag-item-extractor.git
    cd graphrag-item-extractor
